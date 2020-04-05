@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MPG Calculator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css"
+    />
+  </head>
+  <body class="blue-grey darken-4">
+    <div class="container">
+      <div class="col s1">
+        <div class="card blue lighten-4 center-align">
+          <div class="card-content">
+            <span class="card-title bold">MPG Calculator</span>
+            <form id="mpg-form">
+              <div class="row">
+                <div class="input-field col s6">
+                  <input type="number" id="miles" />
+                  <label for="miles">Miles Driven</label>
+                </div>
+                <div class="input-field col s6">
+                  <input type="number" id="gallons" />
+                  <label for="gallons">Gallons Used</label>
+                </div>
+              </div>
+              <div class="row">
+                <button
+                  id="submit"
+                  class="btn waves-effect waves-light"
+                  type="submit"
+                >
+                  Calculate
+                </button>
+              </div>
+            </form>
+            <div class="results">
+              <div
+                id="mpg-field"
+                class="btn disabled scale-transition scale-out"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

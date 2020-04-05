@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+
+		<title>Bootstrap Cheatsheet</title>
+	</head>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container">
+				<a class="navbar-brand" href="#">Navbar</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#"
+								>Home <span class="sr-only">(current)</span></a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Link</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								id="navbarDropdown"
+								role="button"
+								data-toggle="dropdown"
+								aria-haspopup="true"
+								aria-expanded="false"
+							>
+								Dropdown
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Action</a>
+								<a class="dropdown-item" href="#">Another action</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link disabled" href="#">Disabled</a>
+						</li>
+					</ul>
+					<form class="form-inline my-2 my-lg-0">
+						<input
+							class="form-control mr-sm-2"
+							type="search"
+							placeholder="Search"
+							aria-label="Search"
+						/>
+						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+							Search
+						</button>
+					</form>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Jumbotron -->
+		<div class="jumbotron text-center">
+			<div class="container">
+				<h1>Welcome to my website</h1>
+				<p>
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
+					consectetur nobis quos.
+				</p>
+				<a href="#" class="btn btn-primary">Read More</a>
+			</div>
+		</div>
+
+		<div class="container">
+			<!-- Typography -->
+			<h1>Hello, world! <small class="text-muted">Secondary text</small></h1>
+			<p class="lead">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vel
+				assumenda consequatur molestias veniam cum.
+			</p>
+			<p>
+				<strong>Lorem</strong>, ipsum dolor sit amet
+				<b>consectetur</b> adipisicing elit. Quaerat labore, eaque illum illo in
+				<mark>voluptas amet at</mark> accusantium voluptate, tenetur quam
+				suscipit. Impedit aliquam <del>quia molestias</del> aliquid eum eligendi
+				sunt.
+			</p>
+
+			<hr />
+
+			<!-- Alignment -->
+			<p class="text-left text-lowercase">Lorem ipsum dolor sit amet.</p>
+			<p class="text-center text-uppercase">Lorem ipsum dolor sit amet.</p>
+			<p class="text-right text-capitalize">Lorem ipsum dolor sit amet.</p>
+			<p class="text-justify">Lorem ipsum dolor sit amet.</p>
+			<p class="text-nowrap">Lorem ipsum dolor sit amet.</p>
+
+			<!-- Quick Floats -->
+			<div class="float-right">Div floated to right.</div>
+			<div class="float-left">Div floated to left.</div>
+
+			<!-- Clear Float -->
+			<div class="clearfix"></div>
+			<hr />
+
+			<!-- Blockquote -->
+			<blockquote class="blockquote text-right">
+				<p class="mb-0">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsa
+					maxime iusto.
+				</p>
+				<footer class="blockquote-footer">
+					Quote by <cite title="John Doe">John Doe</cite>
+				</footer>
+			</blockquote>
+
+			<hr />
+
+			<!-- Lists -->
+			<ul class="list-unstyled">
+				<li>Item One</li>
+				<li>Item Two</li>
+				<li>Item Three</li>
+				<li>Item Four</li>
+			</ul>
+
+			<ul class="list-inline">
+				<li>Item One</li>
+				<li>Item Two</li>
+				<li>Item Three</li>
+				<li>Item Four</li>
+			</ul>
+
+			<!-- Code -->
+			<code>&lt;h1&gt;Heading Text&lt;/h1&gt;</code>
+			<br />
+			<p>Press <kbd>ctrl + ,</kbd> to output:</p>
+			<samp>This is output text.</samp>
+
+			<hr />
+
+			<!-- Contextual Colors -->
+			<p class="text-primary">Hello World</p>
+			<p class="text-secondary">Hello World</p>
+			<p class="text-success">Hello World</p>
+			<p class="text-info">Hello World</p>
+			<p class="text-warning">Hello World</p>
+			<p class="text-danger">Hello World</p>
+			<p class="text-light">Hello World</p>
+			<p class="text-dark">Hello World</p>
+
+			<!-- Contextual Backgrounds -->
+			<p class="bg-primary">Hello World</p>
+			<p class="bg-secondary">Hello World</p>
+			<p class="bg-success">Hello World</p>
+			<p class="bg-info">Hello World</p>
+			<p class="bg-warning">Hello World</p>
+			<p class="bg-danger">Hello World</p>
+			<p class="bg-light">Hello World</p>
+			<p class="bg-dark">Hello World</p>
+		</div>
+
+		<hr />
+
+		<!-- Buttons -->
+		<div class="container">
+			<button class="btn btn-primary">Button</button>
+			<a href="#" class="btn btn-link" role="button">Link</a>
+			<input type="submit" class="btn btn-primary" value="Submit" />
+			<br />
+
+			<!-- Contextual Buttons -->
+			<button class="btn btn-primary">Primary</button>
+			<button class="btn btn-secondary">Secondary</button>
+			<button class="btn btn-success">Success</button>
+			<button class="btn btn-danger">Danger</button>
+			<button class="btn btn-warning">Warning</button>
+			<button class="btn btn-info">Info</button>
+			<button class="btn btn-light">Light</button>
+			<button class="btn btn-dark">Dark</button>
+			<button class="btn btn-link">Link</button>
+			<br />
+
+			<!-- Button Outlines-->
+			<button class="btn btn-outline-primary">Primary</button>
+			<button class="btn btn-outline-secondary">Secondary</button>
+			<button class="btn btn-outline-success">Success</button>
+			<button class="btn btn-outline-danger">Danger</button>
+			<button class="btn btn-outline-warning">Warning</button>
+			<button class="btn btn-outline-info">Info</button>
+			<button class="btn btn-outline-light">Light</button>
+			<button class="btn btn-outline-dark">Dark</button>
+			<br />
+
+			<!-- Button Sizes -->
+			<button class="btn btn-primary btn-lg">Large</button>
+			<button class="btn btn-primary">Regular</button>
+			<button class="btn btn-primary btn-sm">Small</button>
+			<button class="btn btn-primary btn-block" disabled="disabled">
+				Block
+			</button>
+		</div>
+
+		<hr />
+
+		<!-- Forms -->
+		<div class="container">
+			<form>
+				<div class="form-group">
+					<label>Name</label>
+					<input type="text" class="form-control" placeholder="Add Name" />
+				</div>
+				<div class="form-group">
+					<label>Email</label>
+					<input type="email" class="form-control" placeholder="Add Email" />
+				</div>
+				<div class="form-group">
+					<label>Message</label>
+					<textarea class="form-control" placeholder="Add Message"></textarea>
+				</div>
+				<div class="form-group">
+					<label>Gender</label>
+					<select class="form-control">
+						<option value="male">Male</option>
+						<option value="female">Female</option>
+						<option value="other">Other</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label>Upload File</label>
+					<input type="file" />
+					<p class="form-text">Only png and jpg allowed</p>
+				</div>
+				<div class="checkbox">
+					<label> <input type="checkbox" /> Check me out </label>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+
+			<hr />
+
+			<!-- Inline form -->
+			<form class="form-inline">
+				<div class="form-group">
+					<label>Email</label>
+					<input type="email" class="form-control" placeholder="Email" />
+				</div>
+				<div class="form-group">
+					<label>Password</label>
+					<input type="password" class="form-control" placeholder="Password" />
+				</div>
+				<div class="checkbox">
+					<label> <input type="checkbox" /> Remember me </label>
+				</div>
+				<button type="submit" class="btn btn-primary">Login</button>
+			</form>
+		</div>
+
+		<hr />
+
+		<!-- Tables -->
+		<div class="container">
+			<table class="table table-striped table-bordered table-hover table-sm">
+				<tr>
+					<th>Firstname</th>
+					<th>Lastname</th>
+					<th>Age</th>
+				</tr>
+				<tr class="table-danger">
+					<td>Jill</td>
+					<td>Smith</td>
+					<td>50</td>
+				</tr>
+				<tr>
+					<td>Eve</td>
+					<td>Jackson</td>
+					<td>24</td>
+				</tr>
+				<tr class="table-success">
+					<td>John</td>
+					<td>Doe</td>
+					<td>34</td>
+				</tr>
+				<tr>
+					<td>Stephanie</td>
+					<td>Landon</td>
+					<td>47</td>
+				</tr>
+				<tr>
+					<td>Mike</td>
+					<td>Johnson</td>
+					<td>19</td>
+				</tr>
+			</table>
+		</div>
+
+		<hr />
+
+		<!-- List Groups -->
+		<div class="container">
+			<ul class="list-group">
+				<li class="list-group-item">Item One</li>
+				<li class="list-group-item">Item Two</li>
+				<li class="list-group-item">Item Three</li>
+				<li class="list-group-item">Item Four</li>
+			</ul>
+
+			<div class="list-group">
+				<a href="#" class="list-group-item active">Item One</a>
+				<a href="#" class="list-group-item">Item Two</a>
+				<a href="#" class="list-group-item">Item Three</a>
+				<a href="#" class="list-group-item">Item Four</a>
+			</div>
+		</div>
+
+		<hr />
+
+		<!-- Cards -->
+		<div class="container">
+			<div class="card text-center w-25">
+				<div class="card-body">
+					<h5 class="card-title">Card Title</h5>
+					<p class="card-text">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi quos
+						facilis quibusdam aliquam! Voluptas, velit?
+					</p>
+					<a href="#" class="btn btn-primary">Link</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Cards in grid -->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="card text-center">
+						<div class="card-body">
+							<h5 class="card-title">Card Title</h5>
+							<p class="card-text">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+								quos facilis quibusdam aliquam! Voluptas, velit?
+							</p>
+							<a href="#" class="btn btn-primary">Link</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="card border-primary text-center">
+						<div class="card-header">Header</div>
+						<div class="card-body">
+							<h5 class="card-title">Card Title</h5>
+							<p class="card-text">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+								quos facilis quibusdam aliquam! Voluptas, velit?
+							</p>
+							<a href="#" class="btn btn-primary">Link</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="card text-center">
+						<div class="card-body">
+							<h5 class="card-title">Card Title</h5>
+							<p class="card-text">
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi
+								quos facilis quibusdam aliquam! Voluptas, velit?
+							</p>
+							<a href="#" class="btn btn-primary">Link</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr />
+
+		<!-- Card decks -->
+		<div class="container">
+			<div class="card-deck">
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							This is a wider card with supporting text below as a natural
+							lead-in to additional content. This content is a little bit
+							longer.
+						</p>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted">Last updated 3 mins ago</small>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							This card has supporting text below as a natural lead-in to
+							additional content.
+						</p>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted">Last updated 3 mins ago</small>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">
+							This is a wider card with supporting text below as a natural
+							lead-in to additional content. This card has even longer content
+							than the first to show that equal height action.
+						</p>
+					</div>
+					<div class="card-footer">
+						<small class="text-muted">Last updated 3 mins ago</small>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr />
+
+		<!-- Alerts -->
+		<div class="container">
+			<div class="alert alert-success" role="alert">A success alert</div>
+			<div class="alert alert-info" role="alert">An info altert</div>
+			<div class="alert alert-warning" role="alert">Warning alert</div>
+			<div class="alert alert-danger" role="alert">Danger alert</div>
+
+			<div class="alert alert-warning alert-dismissible" role="alert">
+				<button type="button" class="close" data-dismiss="alert">
+					<span>&times;</span>
+				</button>
+				You can close this alert
+			</div>
+
+			<!-- Progress bars -->
+			<div class="progress">
+				<div
+					class="progress-bar bg-success progress-bar-striped progress-bar-animated w-50"
+				>
+					50%
+				</div>
+			</div>
+
+			<hr />
+
+			<!-- Badges -->
+			<span class="badge badge-primary">Primary</span>
+			<span class="badge badge-secondary">Secondary</span>
+			<span class="badge badge-success">Success</span>
+			<span class="badge badge-danger">Danger</span>
+			<span class="badge badge-warning">Warning</span>
+			<span class="badge badge-info">Info</span>
+			<span class="badge badge-light">Light</span>
+			<span class="badge badge-dark">Dark</span>
+			<button type="button" class="btn btn-primary">
+				Notifications <span class="badge badge-light">4</span>
+			</button>
+		</div>
+
+		<div class="container">
+			<img class="img-thumbnail" src="https://via.placeholder.com/150" />
+			<img class="rounded" src="https://via.placeholder.com/150" />
+		</div>
+
+		<hr />
+
+		<!-- Grids -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-sm-4">
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Reprehenderit beatae voluptatum autem veritatis suscipit ullam
+						voluptates itaque, commodi impedit, quos aliquid nobis fugiat
+						mollitia aliquam sunt perferendis ex totam voluptatibus.
+					</p>
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<p>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Exercitationem, impedit!
+					</p>
+				</div>
+			</div>
+			<br />
+			<div class="row">
+				<div class="col-md-3">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse,
+						veritatis!
+					</p>
+				</div>
+				<div class="col-md-3">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+						molestias.
+					</p>
+				</div>
+				<div class="col-md-3">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+						molestias.
+					</p>
+				</div>
+				<div class="col-md-3">
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+						molestias.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div style="height:600px"></div>
+
+		<!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
