@@ -1,12 +1,13 @@
 const card = document.querySelector('#card');
 const result = document.querySelector('#result');
+const resetButton = document.querySelector('#reset-button');
+
 let startTime = 0;
 
 card.addEventListener('mousedown', startTest);
 card.addEventListener('mouseup', endTest);
 
 function startTest() {
-  console.log('start');
   card.classList.add('yellow');
   card.classList.remove('green');
   randomChange();
@@ -14,7 +15,6 @@ function startTest() {
 
 function randomChange() {
   let interval = (Math.random() * (8 - 2) + 2) * 1000;
-  console.log(interval);
   setTimeout(reflex, interval);
 }
 
@@ -22,17 +22,31 @@ function reflex() {
   startTime = Date.now();
   card.classList.add('red');
   card.classList.remove('yellow');
-  console.log(Date.now());
-  return false;
 }
 
 function endTest() {
   if (startTime !== 0) {
     let endTime = Date.now();
     let reflexTime = endTime - startTime;
-    result.innerHTML = `You finished in ${reflexTime}.`;
+    result.innerHTML = `You finished in ${reflexTime} milliseconds.`;
   } else {
     result.innerHTML = 'Too Soon!';
   }
-  console.log('Test Over');
+  card.removeEventListener('mousedown', startTest);
+  card.removeEventListener('mouseup', endTest);
+
+  resetButton.classList.remove('hiddendiv');
+  resetButton.addEventListener('click', reset);
+}
+
+function reset() {
+  startTime = 0;
+  card.addEventListener('mousedown', startTest);
+  card.addEventListener('mouseup', endTest);
+
+  result.innerHTML = '';
+  resetButton.classList.add('hiddendiv');
+  card.classList.add('green');
+  card.classList.remove('red');
+  card.classList.remove('yellow');
 }
